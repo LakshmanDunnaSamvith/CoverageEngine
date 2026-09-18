@@ -1,0 +1,67 @@
+{
+  "application": {
+    "id": "northstar-banking",
+    "name": "Northstar Banking Application",
+    "baseUrl": "http://localhost:5173",
+    "routes": [
+      {
+        "id": "route-dashboard",
+        "path": "/dashboard",
+        "name": "Command center",
+        "risk": "medium",
+        "components": [
+          {
+            "id": "component-dashboard-summary",
+            "name": "Coverage summary",
+            "selector": "[data-coverage-id='dashboard-summary']",
+            "actions": [
+              { "id": "action-dashboard-view", "name": "View summary", "event": "click" }
+            ],
+            "workflows": ["workflow-quality-review"]
+          }
+        ]
+      },
+      {
+        "id": "route-loans",
+        "path": "/loans",
+        "name": "Loans",
+        "risk": "high",
+        "components": [
+          {
+            "id": "component-loan-applications",
+            "name": "Loan applications",
+            "selector": "[data-coverage-id='loan-applications']",
+            "actions": [
+              { "id": "action-loan-open", "name": "Open applications", "event": "click" },
+              { "id": "action-loan-submit", "name": "Submit application", "event": "submit" }
+            ],
+            "workflows": ["workflow-loan-application"]
+          }
+        ]
+      },
+      {
+        "id": "route-cards-disputes",
+        "path": "/cards/disputes",
+        "name": "Card disputes",
+        "risk": "high",
+        "components": [
+          {
+            "id": "component-dispute-form",
+            "name": "Dispute form",
+            "selector": "[data-coverage-id='dispute-form']",
+            "actions": [
+              { "id": "action-dispute-open", "name": "Open dispute form", "event": "click" },
+              { "id": "action-dispute-submit", "name": "Submit dispute", "event": "submit" }
+            ],
+            "workflows": ["workflow-card-dispute"]
+          }
+        ]
+      }
+    ],
+    "workflows": [
+      { "id": "workflow-quality-review", "name": "Review quality coverage", "requiredActions": ["action-dashboard-view"] },
+      { "id": "workflow-loan-application", "name": "Complete loan application", "requiredActions": ["action-loan-open", "action-loan-submit"] },
+      { "id": "workflow-card-dispute", "name": "Submit card dispute", "requiredActions": ["action-dispute-open", "action-dispute-submit"] }
+    ]
+  }
+}

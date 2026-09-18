@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Coverage Intelligence Capture",
+  "version": "0.1.0",
+  "description": "Start, stop, autosave, and inspect browser automation coverage sessions.",
+  "permissions": ["storage", "tabs", "webNavigation"],
+  "host_permissions": ["<all_urls>"],
+  "action": { "default_popup": "popup.html", "default_title": "Coverage capture" },
+  "background": { "service_worker": "background.js", "type": "module" },
+  "content_scripts": [{ "matches": ["<all_urls>"], "js": ["content.js"], "run_at": "document_idle" }]
+}

@@ -1,0 +1,22 @@
+# .NET build output
+**/bin/
+**/obj/
+
+# Node dependencies and build output
+**/node_modules/
+**/dist/
+
+# Python caches
+**/__pycache__/
+*.py[cod]
+
+# Local environment and editor files
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db

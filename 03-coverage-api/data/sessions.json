@@ -1,0 +1,30 @@
+[
+  {
+    "Id": "S-3F85395E",
+    "Name": "diagnostic session",
+    "Status": "active",
+    "StartedAt": "2026-09-18T05:29:36.925112+00:00",
+    "EventCount": 0
+  },
+  {
+    "Id": "S-84D61211",
+    "Name": "Browser automation",
+    "Status": "active",
+    "StartedAt": "2026-09-18T05:47:06.2408127+00:00",
+    "EventCount": 0
+  },
+  {
+    "Id": "S-F068D4FB",
+    "Name": "Browser automation session",
+    "Status": "active",
+    "StartedAt": "2026-09-18T05:47:19.2067243+00:00",
+    "EventCount": 0
+  },
+  {
+    "Id": "S-01F808AD",
+    "Name": "Browser automation session",
+    "Status": "active",
+    "StartedAt": "2026-09-18T05:47:36.6320986+00:00",
+    "EventCount": 0
+  }
+]
