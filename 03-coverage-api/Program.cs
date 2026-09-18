@@ -2,7 +2,8 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.WebHost.UseUrls("http://0.0.0.0:5060", "http://[::]:5060");
+// Port 5070 is used deliberately: Chromium browsers block 5060/5061 (SIP) as unsafe ports.
+builder.WebHost.UseUrls("http://0.0.0.0:5070", "http://[::]:5070");
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy => policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
 var app = builder.Build();
 app.UseCors();

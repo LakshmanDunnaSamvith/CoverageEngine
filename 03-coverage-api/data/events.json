@@ -1,1 +1,86 @@
-[]
+[
+  {
+    "SessionId": "S-F6573F9F",
+    "EventId": "14648226-0aec-4739-9e5f-87487477109d",
+    "Kind": "action",
+    "RouteId": "route-dashboard",
+    "WorkflowIds": [],
+    "Source": "automation",
+    "Timestamp": "2026-09-18T06:12:21.599+00:00",
+    "Metadata": {
+      "tag": "SECTION"
+    }
+  },
+  {
+    "SessionId": "S-F6573F9F",
+    "EventId": "673b30b5-e393-4930-87a1-1928531c0234",
+    "Kind": "action",
+    "RouteId": "route-dashboard",
+    "WorkflowIds": [],
+    "Source": "automation",
+    "Timestamp": "2026-09-18T06:12:24.596+00:00",
+    "Metadata": {
+      "tag": "SPAN"
+    }
+  },
+  {
+    "SessionId": "S-F6573F9F",
+    "EventId": "9e659695-d4e1-4902-8ad7-8eb358cef93e",
+    "Kind": "action",
+    "RouteId": "route-dashboard",
+    "WorkflowIds": [],
+    "Source": "automation",
+    "Timestamp": "2026-09-18T06:12:26.02+00:00",
+    "Metadata": {
+      "tag": "BUTTON"
+    }
+  },
+  {
+    "SessionId": "S-F6573F9F",
+    "EventId": "2cdba24a-23d5-4bcd-8694-be269a6ccb08",
+    "Kind": "action",
+    "RouteId": "route-dashboard",
+    "WorkflowIds": [],
+    "Source": "automation",
+    "Timestamp": "2026-09-18T06:12:27.146+00:00",
+    "Metadata": {
+      "tag": "SPAN"
+    }
+  },
+  {
+    "SessionId": "S-F6573F9F",
+    "EventId": "6b2c4dba-0211-4cbd-8cac-03c7c6db28ee",
+    "Kind": "action",
+    "RouteId": "route-dashboard",
+    "WorkflowIds": [],
+    "Source": "automation",
+    "Timestamp": "2026-09-18T06:12:28.137+00:00",
+    "Metadata": {
+      "tag": "SPAN"
+    }
+  },
+  {
+    "SessionId": "S-F6573F9F",
+    "EventId": "650e048e-aa94-480e-ba60-40edb59b304a",
+    "Kind": "action",
+    "RouteId": "route-dashboard",
+    "WorkflowIds": [],
+    "Source": "automation",
+    "Timestamp": "2026-09-18T06:12:29.742+00:00",
+    "Metadata": {
+      "tag": "SPAN"
+    }
+  },
+  {
+    "SessionId": "S-F6573F9F",
+    "EventId": "d905e0cc-44d5-4414-9188-f830aaf93e95",
+    "Kind": "action",
+    "RouteId": "route-dashboard",
+    "WorkflowIds": [],
+    "Source": "automation",
+    "Timestamp": "2026-09-18T06:12:30.456+00:00",
+    "Metadata": {
+      "tag": "BUTTON"
+    }
+  }
+]

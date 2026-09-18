@@ -26,5 +26,34 @@
     "Status": "active",
     "StartedAt": "2026-09-18T05:47:36.6320986+00:00",
     "EventCount": 0
+  },
+  {
+    "Id": "S-B77E523F",
+    "Name": "Dashboard controlled session",
+    "Status": "active",
+    "StartedAt": "2026-09-18T06:11:20.0081012+00:00",
+    "EventCount": 0
+  },
+  {
+    "Id": "S-85FDF177",
+    "Name": "Dashboard controlled session",
+    "Status": "active",
+    "StartedAt": "2026-09-18T06:11:23.261083+00:00",
+    "EventCount": 0
+  },
+  {
+    "Id": "S-806B77B3",
+    "Name": "Browser automation session",
+    "Status": "active",
+    "StartedAt": "2026-09-18T06:12:13.9543437+00:00",
+    "EventCount": 0
+  },
+  {
+    "Id": "S-F6573F9F",
+    "Name": "Browser automation session",
+    "Status": "completed",
+    "StartedAt": "2026-09-18T06:12:20.0763139+00:00",
+    "StoppedAt": "2026-09-18T06:12:43.2434353+00:00",
+    "EventCount": 7
   }
 ]

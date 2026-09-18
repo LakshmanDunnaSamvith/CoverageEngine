@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
 
-const api = 'http://localhost:5060/api';
+const api = 'http://localhost:5070/api';
 function App() {
   const [sessions, setSessions] = useState([]); const [selected, setSelected] = useState(null); const [report, setReport] = useState(null);
   async function refresh() { const data = await fetch(`${api}/sessions`).then(r => r.json()); setSessions(data); if (data[0]) select(data[0].id); }

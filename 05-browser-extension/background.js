@@ -1,4 +1,4 @@
-const API = 'http://127.0.0.1:5060/api';
+const API = 'http://127.0.0.1:5070/api';
 const state = { active: false, sessionId: null, events: [], lastFlush: 0, error: null };
 chrome.runtime.onMessage.addListener((message, sender, respond) => { handle(message).then(respond); return true; });
 async function handle(message) {
