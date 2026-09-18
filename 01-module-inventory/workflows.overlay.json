@@ -1,0 +1,19 @@
+{
+  "workflows": [
+    {
+      "id": "workflow-login",
+      "name": "Sign in to banking workspace",
+      "requiredActions": []
+    },
+    {
+      "id": "workflow-loan-review",
+      "name": "Review loans",
+      "requiredActions": []
+    },
+    {
+      "id": "workflow-card-dispute",
+      "name": "Open a card dispute",
+      "requiredActions": []
+    }
+  ]
+}

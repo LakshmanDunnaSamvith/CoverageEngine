@@ -7,6 +7,23 @@ from typing import Any
 LEVELS = ("routes", "components", "actions", "workflows")
 
 
+def merge_workflow_overlay(inventory: dict[str, Any], overlay: dict[str, Any] | None) -> dict[str, Any]:
+    """Merge a human-curated workflow overlay onto a crawled inventory.
+
+    The crawler cannot infer business workflows, so it emits an empty
+    ``workflows`` list. This lets teams keep workflows in a separate file
+    that survives re-crawling. Overlay shape: {"workflows": [...]}.
+    """
+    if not overlay:
+        return inventory
+    app = inventory.setdefault("application", {})
+    existing = {w["id"]: w for w in app.get("workflows", [])}
+    for workflow in overlay.get("workflows", []):
+        existing[workflow["id"]] = workflow
+    app["workflows"] = list(existing.values())
+    return inventory
+
+
 def _inventory_nodes(inventory: dict[str, Any]) -> dict[str, dict[str, Any]]:
     app = inventory["application"]
     nodes = {level: {} for level in LEVELS}

@@ -1,0 +1,307 @@
+{
+  "application": {
+    "id": "localhost-5173",
+    "name": "PNC Bank Quality Platform",
+    "baseUrl": "http://localhost:5173",
+    "generatedBy": "06-inventory-crawler",
+    "routes": [
+      {
+        "id": "route-root",
+        "path": "/",
+        "name": "/",
+        "risk": "low",
+        "components": [
+          {
+            "id": "component-root-login-card",
+            "name": "login-card",
+            "selector": null,
+            "actions": [
+              {
+                "id": "action-root-name-email",
+                "name": "maya.chen@pnc.com",
+                "event": "change",
+                "risk": "low",
+                "selector": "div#root > div > form > label:nth-of-type(1) > input"
+              },
+              {
+                "id": "action-root-name-password",
+                "name": "demo123",
+                "event": "change",
+                "risk": "low",
+                "selector": "div#root > div > form > label:nth-of-type(2) > input"
+              },
+              {
+                "id": "action-root-button-sign-in",
+                "name": "Sign in",
+                "event": "click",
+                "risk": "low",
+                "selector": "div#root > div > form > button"
+              }
+            ],
+            "workflows": []
+          }
+        ]
+      },
+      {
+        "id": "route-dashboard",
+        "path": "/dashboard",
+        "name": "/dashboard",
+        "risk": "low",
+        "components": [
+          {
+            "id": "component-dashboard-login-card",
+            "name": "login-card",
+            "selector": null,
+            "actions": [
+              {
+                "id": "action-dashboard-name-email",
+                "name": "maya.chen@pnc.com",
+                "event": "change",
+                "risk": "low",
+                "selector": "div#root > div > form > label:nth-of-type(1) > input"
+              },
+              {
+                "id": "action-dashboard-name-password",
+                "name": "demo123",
+                "event": "change",
+                "risk": "low",
+                "selector": "div#root > div > form > label:nth-of-type(2) > input"
+              },
+              {
+                "id": "action-dashboard-button-sign-in",
+                "name": "Sign in",
+                "event": "click",
+                "risk": "low",
+                "selector": "div#root > div > form > button"
+              }
+            ],
+            "workflows": []
+          }
+        ]
+      },
+      {
+        "id": "route-users",
+        "path": "/users",
+        "name": "/users",
+        "risk": "low",
+        "components": [
+          {
+            "id": "component-users-login-card",
+            "name": "login-card",
+            "selector": null,
+            "actions": [
+              {
+                "id": "action-users-name-email",
+                "name": "maya.chen@pnc.com",
+                "event": "change",
+                "risk": "low",
+                "selector": "div#root > div > form > label:nth-of-type(1) > input"
+              },
+              {
+                "id": "action-users-name-password",
+                "name": "demo123",
+                "event": "change",
+                "risk": "low",
+                "selector": "div#root > div > form > label:nth-of-type(2) > input"
+              },
+              {
+                "id": "action-users-button-sign-in",
+                "name": "Sign in",
+                "event": "click",
+                "risk": "low",
+                "selector": "div#root > div > form > button"
+              }
+            ],
+            "workflows": []
+          }
+        ]
+      },
+      {
+        "id": "route-loans",
+        "path": "/loans",
+        "name": "/loans",
+        "risk": "high",
+        "components": [
+          {
+            "id": "component-loans-login-card",
+            "name": "login-card",
+            "selector": null,
+            "actions": [
+              {
+                "id": "action-loans-name-email",
+                "name": "maya.chen@pnc.com",
+                "event": "change",
+                "risk": "low",
+                "selector": "div#root > div > form > label:nth-of-type(1) > input"
+              },
+              {
+                "id": "action-loans-name-password",
+                "name": "demo123",
+                "event": "change",
+                "risk": "low",
+                "selector": "div#root > div > form > label:nth-of-type(2) > input"
+              },
+              {
+                "id": "action-loans-button-sign-in",
+                "name": "Sign in",
+                "event": "click",
+                "risk": "low",
+                "selector": "div#root > div > form > button"
+              }
+            ],
+            "workflows": []
+          }
+        ]
+      },
+      {
+        "id": "route-creditcards",
+        "path": "/creditcards",
+        "name": "/creditcards",
+        "risk": "medium",
+        "components": [
+          {
+            "id": "component-creditcards-login-card",
+            "name": "login-card",
+            "selector": null,
+            "actions": [
+              {
+                "id": "action-creditcards-name-email",
+                "name": "maya.chen@pnc.com",
+                "event": "change",
+                "risk": "low",
+                "selector": "div#root > div > form > label:nth-of-type(1) > input"
+              },
+              {
+                "id": "action-creditcards-name-password",
+                "name": "demo123",
+                "event": "change",
+                "risk": "low",
+                "selector": "div#root > div > form > label:nth-of-type(2) > input"
+              },
+              {
+                "id": "action-creditcards-button-sign-in",
+                "name": "Sign in",
+                "event": "click",
+                "risk": "low",
+                "selector": "div#root > div > form > button"
+              }
+            ],
+            "workflows": []
+          }
+        ]
+      },
+      {
+        "id": "route-statements",
+        "path": "/statements",
+        "name": "/statements",
+        "risk": "medium",
+        "components": [
+          {
+            "id": "component-statements-login-card",
+            "name": "login-card",
+            "selector": null,
+            "actions": [
+              {
+                "id": "action-statements-name-email",
+                "name": "maya.chen@pnc.com",
+                "event": "change",
+                "risk": "low",
+                "selector": "div#root > div > form > label:nth-of-type(1) > input"
+              },
+              {
+                "id": "action-statements-name-password",
+                "name": "demo123",
+                "event": "change",
+                "risk": "low",
+                "selector": "div#root > div > form > label:nth-of-type(2) > input"
+              },
+              {
+                "id": "action-statements-button-sign-in",
+                "name": "Sign in",
+                "event": "click",
+                "risk": "low",
+                "selector": "div#root > div > form > button"
+              }
+            ],
+            "workflows": []
+          }
+        ]
+      },
+      {
+        "id": "route-activity",
+        "path": "/activity",
+        "name": "/activity",
+        "risk": "low",
+        "components": [
+          {
+            "id": "component-activity-login-card",
+            "name": "login-card",
+            "selector": null,
+            "actions": [
+              {
+                "id": "action-activity-name-email",
+                "name": "maya.chen@pnc.com",
+                "event": "change",
+                "risk": "low",
+                "selector": "div#root > div > form > label:nth-of-type(1) > input"
+              },
+              {
+                "id": "action-activity-name-password",
+                "name": "demo123",
+                "event": "change",
+                "risk": "low",
+                "selector": "div#root > div > form > label:nth-of-type(2) > input"
+              },
+              {
+                "id": "action-activity-button-sign-in",
+                "name": "Sign in",
+                "event": "click",
+                "risk": "low",
+                "selector": "div#root > div > form > button"
+              }
+            ],
+            "workflows": []
+          }
+        ]
+      },
+      {
+        "id": "route-preferences",
+        "path": "/preferences",
+        "name": "/preferences",
+        "risk": "medium",
+        "components": [
+          {
+            "id": "component-preferences-login-card",
+            "name": "login-card",
+            "selector": null,
+            "actions": [
+              {
+                "id": "action-preferences-name-email",
+                "name": "maya.chen@pnc.com",
+                "event": "change",
+                "risk": "low",
+                "selector": "div#root > div > form > label:nth-of-type(1) > input"
+              },
+              {
+                "id": "action-preferences-name-password",
+                "name": "demo123",
+                "event": "change",
+                "risk": "low",
+                "selector": "div#root > div > form > label:nth-of-type(2) > input"
+              },
+              {
+                "id": "action-preferences-button-sign-in",
+                "name": "Sign in",
+                "event": "click",
+                "risk": "low",
+                "selector": "div#root > div > form > button"
+              }
+            ],
+            "workflows": []
+          }
+        ]
+      }
+    ],
+    "workflows": []
+  }
+}

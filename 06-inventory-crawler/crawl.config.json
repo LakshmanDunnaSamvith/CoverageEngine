@@ -1,0 +1,56 @@
+{
+  "applicationId": "hackathon-demo",
+  "name": "PNC Bank Quality Platform",
+  "baseUrl": "http://localhost:5173",
+  "startPath": "/",
+  "maxPages": 40,
+  "maxActionsPerPage": 400,
+  "navigationTimeoutMs": 15000,
+  "settleMs": 700,
+  "headless": true,
+  "sameOriginOnly": true,
+  "seedPaths": [
+    "/dashboard",
+    "/users",
+    "/loans",
+    "/creditcards",
+    "/statements",
+    "/activity",
+    "/preferences"
+  ],
+  "discovery": {
+    "routeProbe": true,
+    "navLinkSelectors": ["aside.sidebar button", ".service-card", "[data-nav]", "a[href^='/']"],
+    "openApiPath": null,
+    "sitemapPath": null
+  },
+  "auth": {
+    "enabled": true,
+    "loginPath": "/",
+    "steps": [
+      { "action": "fill", "selector": "input[name='email']", "value": "maya.chen@pnc.com" },
+      { "action": "fill", "selector": "input[name='password']", "value": "demo123" },
+      { "action": "click", "selector": "button[type='submit']" },
+      { "action": "waitForSelector", "selector": ".app-shell" }
+    ]
+  },
+  "spaNavSelectors": [
+    "aside.sidebar button",
+    ".service-card",
+    "[data-nav]",
+    "a[href^='/']"
+  ],
+  "dynamicSegmentPatterns": [
+    "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-",
+    "^\\d+$",
+    "^[0-9a-f]{24}$"
+  ],
+  "ignorePathPatterns": [
+    "^/logout$",
+    "^/api/"
+  ],
+  "riskRules": [
+    { "match": "loan|dispute|transfer|payment|delete|submit", "risk": "high" },
+    { "match": "card|statement|profile|settings|preference", "risk": "medium" }
+  ]
+}

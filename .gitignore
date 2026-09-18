@@ -5,6 +5,7 @@
 # Node dependencies and build output
 **/node_modules/
 **/dist/
+**/.vite/
 
 # Python caches
 **/__pycache__/

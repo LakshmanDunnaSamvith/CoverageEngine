@@ -55,5 +55,13 @@
     "StartedAt": "2026-09-18T06:12:20.0763139+00:00",
     "StoppedAt": "2026-09-18T06:12:43.2434353+00:00",
     "EventCount": 7
+  },
+  {
+    "Id": "S-4F8CCB2C",
+    "Name": "Browser automation session",
+    "Status": "completed",
+    "StartedAt": "2026-09-18T06:59:14.3166641+00:00",
+    "StoppedAt": "2026-09-18T07:03:39.095937+00:00",
+    "EventCount": 36
   }
 ]
